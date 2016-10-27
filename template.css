@@ -1,0 +1,225 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    * body {
+    }
+
+/*Master Page*/
+#wrap {
+    margin: 10px auto;
+    width: 900px;
+    background: white;
+    height: 100vh;
+}
+
+
+#menuBar {
+    float: right;
+    width: 100%;
+    height: 40px;
+    background: #B4D1E5;
+    clear: both;
+}
+
+    #menuBar ul {
+        width: auto;
+        float: left;
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+
+        #menuBar ul li {
+            display: block;
+            float: left;
+        }
+
+            #menuBar ul li a {
+                padding: 0 10px;
+                text-decoration: none;
+                font-weight: bolder;
+                font-size: 18px;
+                color: white;
+            }
+
+            #menuBar ul li:hover a {
+                color: black;
+            }
+
+#menubarActivePage {
+    background-color: wheat;
+    color: green;
+}
+
+
+
+.accountButtons {
+    float: right;
+    text-decoration: none;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: darkblue;
+    display: inline;
+}
+
+    .accountButtons:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+#btnLogout {
+    padding-top: 18px;
+    font-size: 10px;
+    margin-left: 2px;
+    margin-right: 5px;
+}
+
+#btnCart {
+    padding-right: 10px;
+}
+
+.btnLogout:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#header {
+    width: 100%;
+}
+
+#logo {
+    width: 197px;
+    float: left;
+}
+
+#login {
+    width: 137px;
+    float: right;
+}
+
+.txtUsername {
+    width: 127px;
+    margin: 5px;
+}
+
+.txtPassword {
+    width: 127px;
+    margin: 5px;
+}
+
+.loginButtons {
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    float: left;
+}
+
+    .loginButtons:hover {
+        color: blue;
+        text-decoration: underline;
+    }
+
+.ContentPlaceHolders {
+    clear: both;
+    display: inline-block;
+    width: 876px;
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+    border-left: 2px solid #B4D1E5;
+    border-right: 2px solid #B4D1E5;
+}
+
+#footer {
+    height: 20px;
+    width: 100%;
+    background: #B4D1E5;
+    color: white;
+    font-size: 10pt;
+    text-align: center;
+    padding-top: 7px;
+    clear: both;
+}
+/*End Master Page*/
+
+
+/*Default Page*/
+.cream {
+    width: 500px;
+    margin-left: 190px;
+}
+
+#homeVideo {
+    margin-left: 190px;
+}
+
+#homeWelcome {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightblue;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+}
+
+#videoText {
+    margin-left: 190px;
+    margin-top: 20px;
+}
+/*End Default Page*/
+
+/*Registration Page*/
+.regTable{
+    width:100%
+}
+.regInputType {
+    text-align: right;
+}
+/*End Reg Page*/
+
+/*Testimonial Page*/
+.testimonialImage {
+    margin-left: auto;
+    margin-right: auto;
+    border: black 5px solid;
+}
+
+.cartTableLeft{
+    text-align:right;
+    padding-right:50px;
+}
+
+.cartTableRight{
+
+}
+
+.accountLeftCell{
+    text-align:right;
+    padding-right:5px;
+}
+
+#aboutUsImage{
+    width:300px;
+    margin-left:300px;
+}
+
+p{
+    text-align:justify;
+    margin:20px 50px 20px 50px;
+}
+
+h3{
+    margin-left:50px;
+}
+
+.fb-page{
+    margin-left:200px;
+}
+
+#addProduct{
+    width:inherit;
+    margin-left:225px;
+}

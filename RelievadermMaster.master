@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="RelievadermMaster.master.cs" Inherits="RelievadermMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Relievaderm</title>
+    <link rel="stylesheet" href="template.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/relievaderm.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+
+        <div id="wrap">
+
+            <div id="header">
+                <div id="logo">
+                    <a href="Default.aspx">
+                        <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Images/Logo.jpg" Height="93px" Width="197px" /></a>
+                </div>
+
+                <div id="login" runat="server">
+                    <asp:TextBox ID="txtUsername" CssClass="txtUsername" placeholder="Username" runat="server" ForeColor="black"></asp:TextBox>
+                    <asp:TextBox ID="txtPassword" CssClass="txtPassword" placeholder="Password" runat="server" ForeColor="black" TextMode="Password"></asp:TextBox>
+                    <asp:Label ID="lblIncorrectDetails" runat="server" ForeColor="#FF3300" Visible="False"></asp:Label>
+                    <asp:LinkButton ID="btnRegister" CssClass="loginButtons" runat="server" OnClick="btnRegister_Click">Register</asp:LinkButton>
+                    <asp:LinkButton ID="btnLogin" CssClass="loginButtons" runat="server" OnClick="btnLogin_Click">Login</asp:LinkButton>
+                </div>
+
+            </div>
+
+
+            <div id="menuBar">
+                <ul>
+                    <li><a href="Default.aspx" id="homeLink" runat="server">Home</a></li>
+                    <li><a href="AboutUs.aspx" id="aboutUSLink" runat="server">About Us</a></li>
+                    <li><a href="Products.aspx" id="productsLink" runat="server">Products</a></li>
+                    <li><a href="Testimonials.aspx" id="testimonialsLink" runat="server">Testimonials</a></li>
+                    <li><a href="Contact.aspx" id="contactLink" runat="server">Contact</a></li>
+                </ul>
+
+
+                <asp:LinkButton ID="btnLogout" CssClass="accountButtons" Text="(Logout)" runat="server" Visible="False" OnClick="btnLogout_Click"></asp:LinkButton>
+                <asp:LinkButton ID="btnAccountButton" CssClass="accountButtons" runat="server" Text="My Account" Visible="False" OnClick="btnAccountButton_Click"></asp:LinkButton>
+                <asp:LinkButton ID="btnCart" runat="server" CssClass="accountButtons" Text="Cart (0)" Visible="True" OnClick="btnCart_Click"></asp:LinkButton>
+
+            </div>
+
+            <div class="ContentPlaceHolders">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+            <div id="footer">
+                © Copyright 2016 Michael Grundie
+            </div>
+
+        </div>
+    </form>
+
+</body>
+</html>
